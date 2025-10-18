@@ -161,19 +161,19 @@ export default function App() {
       <FireworksCanvas />
 
       {/* Background Music */}
-      <audio src="/diwali.mp3" autoPlay loop />
+      <audio src="/diwali_theme.mp3" autoPlay loop />
 
       {/* 🪔 Diwali Wishes */}
       {/* Diwali Heading (Bouncing only) */}
       {/* Bouncing Happy Diwali Text */}
-      <div className="absolute top-1/5 w-full text-center z-40 px-4 sm:px-6 md:px-8 animate-bounce">
-        <h1 className="glowing-text text-5xl sm:text-6xl md:text-7xl font-extrabold">
-          🪔✨ Happy Diwali to all...! ✨🪔
+      <div className="md:absolute top-1/5 w-full text-center z-40 px-4 sm:px-6 md:px-8 animate-bounce">
+        <h1 className="glowing-text text-3xl sm:text-6xl md:text-7xl sm:mt30 font-extrabold">
+          🪔✨Happy Diwali!✨🪔
         </h1>
       </div>
 
       {/* Fixed Message and Signature Below */}
-      <div className="absolute top-[55%] w-full text-center z-40 px-4 sm:px-6 md:px-8">
+      <div className="md:absolute top-[55%] w-full text-center z-40 px-4 sm:px-6 md:px-8">
         <p className="mt-4 text-white text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
           May this Diwali fill your life with brightness, joy, and endless smiles.<br />
           Let’s celebrate with love, laughter, and light all around.<br />
@@ -182,7 +182,7 @@ export default function App() {
         <p className="mt-4 text-yellow-300 text-xl sm:text-2xl font-semibold drop-shadow-lg">
           🪔 Sujay Bote
         </p>
-        <p className="mt-6 text-red-900 text-base sm:text-lg md:text-xl lg:text-2xl font-bold drop-shadow-md animate-pulse">
+        <p className="mt-6 text-red-900 text-xl sm:text-xl md:text-xl lg:text-2xl font-bold drop-shadow-md animate-pulse">
         Happy Diwali 🪔 May your code always run, and your bugs always burn 🔥
       </p>
       </div>
