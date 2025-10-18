@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Flicker for fireworks */
+@keyframes firework {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* Flame flicker for diyas */
+@keyframes flame {
+  0%, 100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+  50% { transform: scaleY(1.2) scaleX(0.8); opacity: 0.8; }
+}
+
+/* Spark animation for diyas */
+@keyframes spark {
+  0% { transform: translateY(0) translateX(0); opacity: 1; }
+  100% { transform: translateY(-30px) translateX(10px); opacity: 0; }
+}
+
+/* Shooting cracker animation */
+@keyframes shoot {
+  0% { transform: translateY(0) scale(0.5); opacity: 1; }
+  100% { transform: translateY(-400px) scale(1); opacity: 0; }
+}
+
+/* Glow animation for text */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 20px #ffd700, 0 0 40px #ff8c00, 0 0 60px #ff4500; }
+  50% { text-shadow: 0 0 40px #ffd700, 0 0 60px #ff8c00, 0 0 80px #ff4500; }
+}
+
+.diya {
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 10px;
+}
+
+.flame {
+  width: 6px;
+  height: 12px;
+  background: yellow;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: flame 0.5s infinite;
+  box-shadow: 0 0 15px 5px yellow;
+}
+
+.spark {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: spark 1s infinite;
+}
+
+.cracker {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  animation: shoot 1s linear forwards;
+}
+
+.big-firework-particle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  animation: firework 1.2s ease-out forwards;
+}
+
+.glowing-text {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+.animate-glow {
+  text-shadow: 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+}
