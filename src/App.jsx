@@ -100,7 +100,7 @@ export default function App() {
   const launchRocket = () => {
     const id = Date.now() + Math.random();
     const x = Math.random() * window.innerWidth;
-    const rocketSound = new Audio("/rocket.mp3");
+    const rocketSound = new Audio("/diwali_theme.mp3");
     rocketSound.volume = 0.2;
     rocketSound.play();
 
@@ -165,23 +165,28 @@ export default function App() {
 
       {/* 🪔 Diwali Wishes */}
       {/* Diwali Heading (Bouncing only) */}
-<div className="absolute top-1/5 w-full text-center z-40 px-4 sm:px-6 md:px-8 animate-bounce">
-  <h1 className="glowing-text text-5xl sm:text-6xl md:text-7xl font-extrabold">
-    🪔✨ Happy Diwali 2025! ✨🪔
-  </h1>
-</div>
+      {/* Bouncing Happy Diwali Text */}
+      <div className="absolute top-1/5 w-full text-center z-40 px-4 sm:px-6 md:px-8 animate-bounce">
+        <h1 className="glowing-text text-5xl sm:text-6xl md:text-7xl font-extrabold">
+          🪔✨ Happy Diwali to all...! ✨🪔
+        </h1>
+      </div>
 
-{/* Message and Signature (Still) */}
-<div className="absolute top-[35%] w-full text-center z-40 px-4 sm:px-6 md:px-8">
-  <p className="mt-4 text-white text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto animate-pulse">
-    May this Diwali fill your life with brightness, joy, and endless smiles.<br />
-    Let’s celebrate with love, laughter, and light all around.<br />
-    Wishing you peace, prosperity, and happiness always.
-  </p>
-  <p className="mt-4 text-yellow-300 text-xl sm:text-2xl font-semibold drop-shadow-lg">
-    🪔 Warm wishes,<br />— Sujay Bote
-  </p>
-</div>
+      {/* Fixed Message and Signature Below */}
+      <div className="absolute top-[55%] w-full text-center z-40 px-4 sm:px-6 md:px-8">
+        <p className="mt-4 text-white text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
+          May this Diwali fill your life with brightness, joy, and endless smiles.<br />
+          Let’s celebrate with love, laughter, and light all around.<br />
+          Wishing you peace, prosperity, and happiness always.
+        </p>
+        <p className="mt-4 text-yellow-300 text-xl sm:text-2xl font-semibold drop-shadow-lg">
+          🪔 Sujay Bote
+        </p>
+        <p className="mt-6 text-red-900 text-base sm:text-lg md:text-xl lg:text-2xl font-bold drop-shadow-md animate-pulse">
+        Happy Diwali 🪔 May your code always run, and your bugs always burn 🔥
+      </p>
+      </div>
+
 
 
       {/* 🚀 Rockets */}
